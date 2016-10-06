@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD
 Monica Ferreira silva Lopes <br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <SisMed> sistema idealizado para otimizar o cadastro e retirada de medicaçõe nas famacias de postos de saúde . <br>
+Este documento contém a especificação do projeto do banco de dados SisMed, sistema idealizado para otimizar o cadastro e retirada de medicaçõe nas famacias de postos de saúde . <br>
 
 ###3	MINI-MUNDO<br>
 Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
