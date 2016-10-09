@@ -3,14 +3,15 @@ Trabalho desenvolvido durante a disciplina de BD
 
 #Sumário
 
-###1	COMPONENTES<br>
-Integrantes do grupo<br>
+### 1 <br>
+ Monica Fereira silva Lopes<br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
+Este documento contém a especificação do projeto do banco de dados SisMed , sistema de cadastro de pacientes e medicações , permitindo assim o controle de estoque em uma farmácia em unidade de saúde pública por meio eletronico. <br>
 
 ###3	MINI-MUNDO<br>
-Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
+O sistema esta sendo  pensado basicamente para otmização da retirada de remedios na famácia das unidades de saúde , hoje esse processo e feito manualmente , tendo como controle somente a entrega da receita medica contendo a quantidade de remedio(s) que serão retirados da unidade pelo usúario (paciente0.
+A falta de contole da entrada e saida nesse periodo  no estoque geral  dessas medicações e nitida , haja vista que o levantamento das medicações que deram entrada e saida na famácia e feito de forma trimestral , com o fechamento da fáramcia da unidade pra que seja inseriod os dados em uma planilha de controle em formato de execel e a baixa e arquivamento das receitas que deram  entrada na unidade nesse mesmo periodo . <br>
 
 ###4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
@@ -27,8 +28,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
 ####5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Ana rúbia vicente Jennifer goncalves do Amaral]
+    [Grupo02]: [Carlos guilherme ]
 
 ####5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
