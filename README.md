@@ -3,7 +3,7 @@ Trabalho desenvolvido durante a disciplina de BD
 
 #Sumário
 
-### 1 <br>
+### COMPONENTES <br>
  Monica Fereira silva Lopes<br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
@@ -28,8 +28,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
 ####5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Ana rúbia vicente Jennifer goncalves do Amaral]
-    [Grupo02]: [Carlos guilherme ]
+    [Grupo01]: [Ana rúbia vicente E Jennifer goncalves do Amaral]
+    [Grupo02]: [Carlos guilherme E  Douglas ]
 
 ####5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
@@ -43,8 +43,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    Login: Tabela que armazena as informações relativas ao funcionário que será o usuário padrao do sistema <br>
+    Senha :Tabela que armazena a senhas que serão utilizadas para o acesso ao sistema.<br>
+    Nome: campo que armazena o nome dos pacientes que  serão cadastrados no sistema.<br>
 
 
 ###6	MODELO LÓGICO<br>
