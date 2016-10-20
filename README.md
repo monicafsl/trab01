@@ -23,7 +23,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ###5	MODELO CONCEITUAL<br>
     5.1 NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text]https://github.com/monicafsl/trab01/blob/master/modelo conceitual Sismed.png "Modelo Conceitual")
+![Alt text]https://github.com/monicafsl/trab01/blob/master/modelo%20conceitual%20Sismed.png "Modelo Conceitual")
     
     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
