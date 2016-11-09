@@ -1,6 +1,8 @@
 # TRABALHO 01
 Trabalho desenvolvido durante a disciplina de BD
 
+Esse trabalho esta sendo desenvolvido na wiki  https://github.com/monicafsl/trab01/wiki
+
 #Sumário
 
 ### COMPONENTES <br>
