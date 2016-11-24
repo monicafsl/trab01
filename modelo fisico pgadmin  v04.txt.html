@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc0">-- Geração de Modelo físico
+-- Sql ANSI 2003 - brModelo.
+
+
+
+CREATE TABLE Remedios (
+N_Nota_fiscal Int,
+Data_chegada Date,
+Data_entrada Date,
+Codigo_Unico Integer PRIMARY KEY
+);
+
+CREATE TABLE Lote (
+N_lote_Caixa Int,
+N_Lote_Remedio Int,
+Codigo_Caixa Integer PRIMARY KEY
+);
+
+CREATE TABLE Tipo_medicações (
+Paciente Varchar(40),
+D_Saida Date,
+Uso_continuo Char,
+Receita Char,
+Nome_remedio Varchar(30) PRIMARY KEY
+);
+
+CREATE TABLE Enfermeira (
+CRM VARCHAR(10) PRIMARY KEY,
+N_funcional VARCHAR(10)
+);
+
+CREATE TABLE Administrativo (
+Chefia_imediata VARCHAR(10),
+N_funcional VARCHAR(10)
+);
+
+CREATE TABLE Relatórios (
+Mes Date,
+Nome_Medicação Varchar(30),
+Data_entrada Date,
+Quantid_Estoque Varchar(200),
+Data_saida Date
+);
+
+CREATE TABLE Funcionario(
+N_funcional VARCHAR(10) PRIMARY KEY,
+Nome_func VARCHAR(10),
+H_Trabalho VARCHAR(10),
+Nome_remedio Varchar(30),
+FOREIGN KEY(Nome_remedio) REFERENCES Tipo_medicações (Nome_remedio)
+);
+
+CREATE TABLE Documentos (
+Identidade Char,
+CPF char,
+Num_certidao Char,
+N_cartão_SUS Cahr,
+PRIMARY KEY(CPF,N_cartão_SUS)
+);
+
+CREATE TABLE Cadastro_da_Família (
+Codigo_Aréa Integer,
+C_Família Integer PRIMARY KEY,
+CRM VARCHAR(10),
+FOREIGN KEY(CRM) REFERENCES Enfermeira(CRM)
+);
+
+CREATE TABLE Pacientes (
+Nome VARCHAR(200)
+);
+
+CREATE TABLE Endereço (
+P_referência Varcahr(40),
+N_casa Int,
+Cep Char,
+Rua Varchar(30),
+Municipio Char,
+Bairro Char,
+Codigo_Endereço Integer PRIMARY KEY
+);
+
+CREATE TABLE Dependentes (
+Nome_dependente VARCHAR(50)
+);
+
+CREATE TABLE responsavel (
+Codigo_Unico Integer,
+FOREIGN KEY(Codigo_Unico) REFERENCES Nome_Medicações (Codigo_Unico)
+);
+
+CREATE TABLE Retira (
+Nome_remedio Varchar(30),
+FOREIGN KEY(Nome_remedio) REFERENCES Tipo_medicações (Nome_remedio)
+);
+
+CREATE TABLE Contem (
+Codigo_Unico Integer,
+Codigo_Caixa Integer,
+FOREIGN KEY(Codigo_Unico) REFERENCES Nome_Medicações (Codigo_Unico),
+FOREIGN KEY(Codigo_Caixa) REFERENCES Lote (Codigo_Caixa)
+);
+
+ALTER TABLE Enfermeira ADD FOREIGN KEY(N_funcional) REFERENCES Funcionario(N_funcional);
+ALTER TABLE Administrativo ADD FOREIGN KEY(N_funcional) REFERENCES Funcionario(N_funcional)
+</span></div></body>
+</html>
