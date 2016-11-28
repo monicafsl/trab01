@@ -51,7 +51,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ###6	MODELO LÓGICO<br>
-###7	MODELO FÍSICO<br>
+###7	MODELO FÍSICO
+https://github.com/monicafsl/trab01/blob/master/modelo%20fisico%20pgadmin%20%20v04.pdf
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
