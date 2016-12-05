@@ -1,0 +1,105 @@
+CREATE TABLE Remedios (
+Nome_remedio VarChar (200),
+Tipo_remedio VarChar (200),
+N_Nota_fiscal Int,
+Data_chegada Date,
+Data_entrada Date,
+Codigo_Unico Int PRIMARY KEY
+);
+
+CREATE TABLE Lote (
+N_lote_Caixa Int,
+N_Lote_Remedio Int,
+Codigo_Caixa Int PRIMARY KEY
+);
+
+CREATE TABLE Tipo_medicações (
+Nome_Paciente Varchar(200),
+D_Saida Date,
+Uso_continuo Char,
+Tipo_Receita Char,
+Nome_remedio Varchar(200) PRIMARY KEY
+);
+
+CREATE TABLE Enfermeira (
+CRM VARCHAR(10) PRIMARY KEY,
+N_funcional VARCHAR(10)
+);
+
+CREATE TABLE Administrativo (
+Chefia_imediata VARCHAR(10),
+N_funcional VARCHAR(10)
+);
+
+CREATE TABLE Relatórios (
+Mes Date,
+Nome_Medicação Varchar(200),
+Data_entrada Date,
+Quantid_Estoque Varchar(200),
+Data_saida Date
+);
+
+CREATE TABLE Funcionario(
+N_funcional VARCHAR(200) PRIMARY KEY,
+Nome_func VARCHAR(200),
+H_Trabalho VARCHAR(10),
+Nome_remedio Varchar(200),
+FOREIGN KEY(Nome_remedio) REFERENCES Tipo_medicações (Nome_remedio)
+);
+
+CREATE TABLE Documentos (
+RG Int not null,
+CPF Varchar(25),
+Num_certidao Varchar(25),
+N_cartão_SUS Varchar (25),
+PRIMARY KEY(CPF,N_cartão_SUS)
+);
+
+CREATE TABLE Cadastro_da_Família (
+Codigo_Aréa Integer,
+C_Família Integer PRIMARY KEY,
+CRM VARCHAR(10),
+FOREIGN KEY(CRM) REFERENCES Enfermeira(CRM)
+);
+
+CREATE TABLE Pacientes (
+Nome Varchar(200)
+);
+
+CREATE TABLE Endereço (
+P_referência Varchar(50),
+N_casa Int,
+Cep Char,
+Rua Varchar(50),
+Municipio Char,
+Bairro Char,
+Codigo_Endereço Integer PRIMARY KEY
+);
+
+CREATE TABLE Dependentes (
+ CODIGO           SERIAL ,
+ RG_RESPONSAVEL   INT NOT NULL,
+ NOME_DEPENDENTE  VARCHAR(50),
+ NASCIMENTO       DATE,
+ RELACAO          VARCHAR(10),
+ SEXO             CHAR(1)
+ );
+
+CREATE TABLE responsavel (
+Codigo_Unico Integer,
+FOREIGN KEY(Codigo_Unico) REFERENCES Nome_Medicação (Codigo_Unico)
+);
+CREATE TABLE Retira (
+Nome_remedio Varchar(200),
+FOREIGN KEY(Nome_remedio) REFERENCES Tipo_medicações(Nome_remedio));
+
+CREATE TABLE Contem (
+Codigo_Unico Int,
+Codigo_Caixa Integer,
+FOREIGN KEY(Codigo_Unico) REFERENCES Tipo_Medicações(Nome_remedio),
+FOREIGN KEY(Codigo_Caixa) REFERENCES Lote (Codigo_Caixa)
+);
+
+ALTER TABLE Enfermeira ADD FOREIGN KEY(N_funcional) REFERENCES Funcionario(N_funcional);
+ALTER TABLE Administrativo ADD FOREIGN KEY(N_funcional) REFERENCES Funcionario(N_funcional);
+ALTER TABLE Contem ADD FOREIGN KEY(Codigo_Unico) REFERENCES Tipo_Medicações(Nome_Reme);
