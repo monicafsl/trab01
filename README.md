@@ -6,7 +6,7 @@ Esse trabalho esta sendo desenvolvido na wiki  https://github.com/monicafsl/trab
 #Sumário
 
 ### COMPONENTES <br>
- Monica Fereira silva Lopes<br>
+ Monica Fereira silva Lopes [ferreirasilvalopes@gmail.com]<br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados SisMed , sistema de cadastro de pacientes e medicações , permitindo assim o controle de estoque em uma farmácia em unidade de saúde pública por meio eletronico. <br>
